@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="page">
+			<div class="pageTop">
+				<div class="selectFont">
+					<button onCLick="openFontOptions()">Font Size</button>
+
+					<ul id="suffleFontSize">
+						<li onclick="changeFont('32')">12px</li>
+						<li onclick="changeFont('40')">14px</li>
+						<li onclick="changeFont('48')">16px</li>
+						<li onclick="changeFont('56')">18px</li>
+					</ul>
+				</div>
+				<div class="selectFamily">
+					<button onCLick="openFamilyOptions()" id="secondButton">Font Family</button>
+
+					<ul id="suffleFontFamily">
+						<li onclick="changeFontFamily('Arial')">Arial</li>
+						<li onclick="changeFontFamily('Courier New')">Courier New</li>
+						<li onclick="changeFontFamily('Brush Script MT')">rush Script MT</li>
+						<li onclick="changeFontFamily('Cursive')">Cursive</li>
+						<li onclick="changeFontFamily('Fantasy')">Fantasy</li>
+						<li onclick="changeFontFamily('Monospace')">Monospace</li>
+					</ul>
+				</div>
+			</div>
+			<div style="font-size: 32px; color: green" id="dynamicFont">Javscript is Fun to Learn</div>
+		</div>
+
+		<script src="script.js" />
+	</body>
+</html>
